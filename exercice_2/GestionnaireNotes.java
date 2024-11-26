@@ -13,15 +13,15 @@ public class GestionnaireNotes {
         for (int note : notes) {
             System.out.println("- " + note);
         }
-    }
+    } 
 
-/**
- * 
- * calcule la somme des notes d'un étudiant
- * @param notes tableau contenant les notes de l'étudiant
- * @return la somme des notes d'un élève
- */
-        public int  calculersomme(int[] notes) {
+    /**
+     * 
+     * calcule la somme des notes d'un étudiant
+     * @param notes tableau contenant les notes de l'étudiant
+     * @return la somme des notes d'un élève
+     */
+    public int  calculersomme(int[] notes) {
         int somme = 0;// variable qui va contenir la somme des notes
         for (int note : notes) {//calculer la somme des notes de l'étudiant
             somme += note;
@@ -29,14 +29,14 @@ public class GestionnaireNotes {
         return somme;
     }
 
-/**
- * affiche la moyenne d'un etidiant
- * 
- * @param notes tableau contenant les notes de l'étudiant
- * @param nomEtudiant le nom de l'eutiant
- */
+    /**
+     * affiche la moyenne d'un etidiant
+     * 
+     * @param notes tableau contenant les notes de l'étudiant
+     * @param nomEtudiant le nom de l'eutiant
+     */
        public void afficherMoyenne(String nomEtudiant,int[] notes){
-        double moyenne = (double) somme / notes.length;
+        double moyenne = calculersomme(notes)/ notes.length;
         System.out.println("Moyenne de " + nomEtudiant + ":" + moyenne);
        }
         
