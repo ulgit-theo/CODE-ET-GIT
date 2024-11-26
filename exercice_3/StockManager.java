@@ -5,7 +5,7 @@ public class StockManager {
  * @param produit
  * @param quantite
  * @param stock
- */
+ */ 
     public void gererStock(String typeOperation, String produit, int quantite, int stock) {
        switch (typeOperation) {
         case "ajout":
